@@ -1,5 +1,4 @@
 use gcdx::gcdx;
-use std::cmp::PartialOrd;
 use std::fmt::Display;
 use std::ops::Div;
 use std::ops::Mul;

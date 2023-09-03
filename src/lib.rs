@@ -57,5 +57,15 @@ mod tests {
         let l = lcmx(&v).unwrap();
         println!("{}", l);
         assert_eq!(l, 198);
+
+        let v = vec![1, 2];
+        let l = lcmx(&v).unwrap();
+        println!("{}", l);
+        assert_eq!(l, 2);
+
+        let v = vec![1];
+        let l = lcmx(&v).unwrap();
+        println!("{}", l);
+        assert_eq!(l, 1);
     }
 }

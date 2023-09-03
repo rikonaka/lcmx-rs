@@ -2,6 +2,8 @@
 
 Calculate the least common multiple of multiple values
 
+[![Rust](https://github.com/rikonaka/lcmx-rs/actions/workflows/rust.yml/badge.svg?branch=main)](https://github.com/rikonaka/lcmx-rs/actions/workflows/rust.yml)
+
 ## Example
 
 ```rust

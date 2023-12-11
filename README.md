@@ -1,6 +1,6 @@
 # lcmx-rs
 
-Calculate the least common multiple of multiple values
+Calculate the least common multiple of multiple values.
 
 [![Rust](https://github.com/rikonaka/lcmx-rs/actions/workflows/rust.yml/badge.svg?branch=main)](https://github.com/rikonaka/lcmx-rs/actions/workflows/rust.yml)
 
@@ -10,7 +10,7 @@ Calculate the least common multiple of multiple values
 use lcmx::lcmx;
 
 fn main() {
-    let v: Vec<i32> = vec![1, 2, 3, 4];
+    let v: Vec<usize> = vec![1, 2, 3, 4];
     let l = lcmx(&v).unwrap();
     println!("{}", l);
     assert_eq!(l, 12);

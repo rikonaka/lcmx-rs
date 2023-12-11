@@ -47,24 +47,24 @@ mod tests {
     use super::*;
     #[test]
     fn run() {
-        let v = vec![1, 2, 3, 4];
+        let v: Vec<u8> = vec![1, 2, 3, 4];
         let l = lcmx(&v).unwrap();
-        println!("{}", l);
+        // println!("{}", l);
         assert_eq!(l, 12);
 
-        let v = vec![1, 2, 3, 99];
+        let v: Vec<u16> = vec![1, 2, 3, 99];
         let l = lcmx(&v).unwrap();
-        println!("{}", l);
+        // println!("{}", l);
         assert_eq!(l, 198);
 
-        let v = vec![1, 2];
+        let v: Vec<u32> = vec![1, 2];
         let l = lcmx(&v).unwrap();
-        println!("{}", l);
+        // println!("{}", l);
         assert_eq!(l, 2);
 
-        let v = vec![1];
+        let v: Vec<usize> = vec![1];
         let l = lcmx(&v).unwrap();
-        println!("{}", l);
+        // println!("{}", l);
         assert_eq!(l, 1);
     }
 }

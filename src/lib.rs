@@ -35,7 +35,6 @@ where
         let mut m = values[0];
         for i in 1..values.len() {
             m = lcm(m, values[i]);
-            // println!("{}", m);
         }
         Some(m)
     } else {

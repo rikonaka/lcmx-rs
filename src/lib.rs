@@ -1,4 +1,4 @@
-use gcdx::gcdx;
+use gcdx::gcd;
 use std::fmt::Display;
 use std::ops::Div;
 use std::ops::Mul;
@@ -16,7 +16,7 @@ where
         + gcdx::Zero,
 {
     let tmp = a * b;
-    let g = gcdx(&vec![a, b]).unwrap();
+    let g = gcd(a, b);
     tmp / g
 }
 

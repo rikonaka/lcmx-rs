@@ -2,7 +2,7 @@ use gcdx::gcd_euclidean;
 
 fn lcm(a: usize, b: usize) -> usize {
     let tmp = a * b;
-    let g = gcd_euclidean(a, b).unwrap();
+    let g = gcd_euclidean(a, b);
     tmp / g
 }
 
